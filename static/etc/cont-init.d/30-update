@@ -1,0 +1,2 @@
+#!/usr/bin/with-contenv bash
+[[ -d /app/plexpy/.git ]] && cd /app/plexpy &&  git pull

@@ -1,0 +1,7 @@
+#!/usr/bin/with-contenv bash
+
+umask 0002
+
+chown -R bytesized:bytesized /app /config
+
+exec s6-setuidgid bytesized python /app/plexpy/PlexPy.py --datadir /config
